@@ -1,11 +1,11 @@
-import React from 'react'
-
-import { SectionTitle, Paragraph, Pill } from '../../styles/components'
-import { ProfileLink } from './styles'
+import React from 'react';
+import Layout from '../../components/Layout';
+import { SectionTitle, Paragraph, Pill } from '../../styles';
+import { ProfileLink } from './styles';
 
 const Me = ({ user }) => {
   return (
-    <div>
+    <Layout user={user}>
       <div>
         <SectionTitle>About Me</SectionTitle>
         <Paragraph>{user.basics.summary}</Paragraph>
@@ -31,8 +31,8 @@ const Me = ({ user }) => {
           ))}
         </ul>
       </div>
-    </div>
-  )
-}
+    </Layout>
+  );
+};
 
-export default Me
+export default Me;

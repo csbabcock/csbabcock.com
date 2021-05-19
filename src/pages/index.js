@@ -1,53 +1,29 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Me from './Me';
+import Projects from './Projects';
+import Work from './Work';
+import Education from './Education';
 
-import Layout from '../components/Layout'
-import SEO from '../components/seo'
-import Me from '../components/Me'
-
-const IndexPage = ({ data }) => {
+const Pages = ({ user }) => {
   return (
-    <Layout>
-      <SEO title="Christian Babcock" />
-      <Me user={data.user} />
-    </Layout>
-  )
-}
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Me user={user} />
+        </Route>
+        <Route path="/projects">
+          <Projects user={user} />
+        </Route>
+        <Route path="/work">
+          <Work user={user} />
+        </Route>
+        <Route path="/education">
+          <Education user={user} />
+        </Route>
+      </Switch>
+    </Router>
+  );
+};
 
-export default IndexPage
-
-export const query = graphql`
-  query getUserProfile {
-    user {
-      basics {
-        id
-        username
-        blog
-        followers
-        following
-        headline
-        id
-        karma
-        label
-        region
-        name
-        picture
-        username
-        summary
-        website
-        yearsOfExperience
-        profiles {
-          network
-          url
-          username
-        }
-      }
-      skills {
-        name
-        level
-        yearsOfExperience
-        rating
-      }
-    }
-  }
-`
+export default Pages;

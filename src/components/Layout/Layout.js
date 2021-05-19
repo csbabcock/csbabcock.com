@@ -1,26 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Sidebar from '../Sidebar'
-import UserHeader from '../UserHeader'
-import MobileNav from '../MobileNav'
+import React from 'react';
+import Sidebar from '../Sidebar';
+import UserHeader from '../UserHeader';
+import MobileNav from '../MobileNav';
 
-import { StyledContent } from './styles'
+import { StyledContent } from './styles';
 
-const Layout = ({ children }) => {
+const Layout = ({ user, children }) => {
   return (
     <>
       <MobileNav />
       <Sidebar />
       <StyledContent>
-        <UserHeader />
+        <UserHeader user={user} />
         <div>{children}</div>
       </StyledContent>
     </>
-  )
-}
+  );
+};
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+export default Layout;
