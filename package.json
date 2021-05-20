@@ -1,9 +1,9 @@
 {
-  "name": "portfolio-create-react-app",
+  "name": "csbabcock.com",
   "version": "0.1.0",
   "private": false,
   "license": "MIT",
-  "homepage": "http://csbabcock.github.io/portfolio-create-react-app",
+  "homepage": "http://csbabcock.github.io/csbabcock.com",
   "dependencies": {
     "@carbon/icons-react": "^10.32.0",
     "@carbon/themes": "^10.34.0",
