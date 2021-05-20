@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/csbabcock.com/static/css/main.bdae5be4.chunk.css",
+    "main.js": "/csbabcock.com/static/js/main.512809c4.chunk.js",
+    "main.js.map": "/csbabcock.com/static/js/main.512809c4.chunk.js.map",
+    "runtime-main.js": "/csbabcock.com/static/js/runtime-main.91dd5049.js",
+    "runtime-main.js.map": "/csbabcock.com/static/js/runtime-main.91dd5049.js.map",
+    "static/js/2.bd126fc0.chunk.js": "/csbabcock.com/static/js/2.bd126fc0.chunk.js",
+    "static/js/2.bd126fc0.chunk.js.map": "/csbabcock.com/static/js/2.bd126fc0.chunk.js.map",
+    "index.html": "/csbabcock.com/index.html",
+    "precache-manifest.248e66adf7227ba934be6ba2e6260148.js": "/csbabcock.com/precache-manifest.248e66adf7227ba934be6ba2e6260148.js",
+    "service-worker.js": "/csbabcock.com/service-worker.js",
+    "static/css/main.bdae5be4.chunk.css.map": "/csbabcock.com/static/css/main.bdae5be4.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91dd5049.js",
+    "static/js/2.bd126fc0.chunk.js",
+    "static/css/main.bdae5be4.chunk.css",
+    "static/js/main.512809c4.chunk.js"
+  ]
+}
